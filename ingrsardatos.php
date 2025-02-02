@@ -1,0 +1,34 @@
+<?php
+echo "<!DOCTYPE html>\n";
+echo "<html lang=\"es\">\n";
+echo "<head>\n";
+echo "<meta charset=\"utf-8\" />\n";
+echo "<meta name=\"viewport\" content=\"width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0\" />\n";
+echo "<title>Formulario de ingreso de datos</title>\n";
+echo "<link rel=\"stylesheet\" href=\"css/forms.css\" />\n";
+echo "<script src=\"js/validar.js\"></script>\n";
+echo "<script src=\"js/modernizr.custom.lis.js\"></script>\n";
+echo "</head>\n";
+echo "<body>\n";
+echo "<header>\n";
+echo "<h1>Ingreso de datos</h1>\n";
+echo "</header>\n";
+echo "<section>\n";
+echo "<article>\n";
+echo "<form action=\"procesar.php\" method=\"POST\">\n";
+echo "<label>Cliente:</label>\n";
+echo "<input type=\"text\" id=\"client\" name=\"client\" />\n";
+echo "<label>Producto:</label>\n";
+echo "<input type=\"text\" id=\"product\" name=\"product\" />\n";
+echo "<label>Precio:</label>\n";
+echo "<input type=\"text\" id=\"price\" name=\"price\" />\n";
+echo "<label>Cantidad:</label>\n";
+echo "<input type=\"text\" id=\"quantity\" name=\"quantity\" />\n";
+echo "<span id=\"numbersOnly\">Ingrese números enteros</span>\n";
+echo "<input type=\"submit\" id=\"enviar\" name=\"submit\" value=\"Enviar\" class=\"submit\" />\n";
+echo "</form>\n";
+echo "</article>\n";
+echo "</section>\n";
+echo "</body>\n";
+echo "</html>\n";
+?>
